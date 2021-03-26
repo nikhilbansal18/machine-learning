@@ -1,0 +1,8 @@
+conda info --envs
+conda activate carprediction
+
+pip freeze > requirements.txt
+
+pip install flask
+pip install jsonify
+pip install requests
