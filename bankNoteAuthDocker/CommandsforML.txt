@@ -1,0 +1,35 @@
+conda info --envs
+conda activate bankNoteAuthDocker
+
+pip install pandas
+pip install scikit-learn
+
+pip freeze > requirements.txt
+
+pip install flask
+pip install jsonify
+pip install requests
+
+# for front end
+pip install flasgger
+
+# for front end
+pip install flasgger
+
+Docker Commands
+FROM
+COPY
+EXPOSE
+WORKDIR
+RUN
+CMD
+
+## to create docker
+docker build -t money_api .
+
+## run the docker
+docker run -p 8000:8000 money_api
+
+http://0.0.0.0:8000/apidocs/
+
+docker stop money_api
